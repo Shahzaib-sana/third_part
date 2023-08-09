@@ -1,0 +1,9 @@
+FROM python:3
+
+WORKDIR /part_one
+
+COPY hello.py /part_one/hello.py
+
+EXPOSE 8080
+
+CMD [ "python", "hello.py" ]
